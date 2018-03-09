@@ -8,10 +8,10 @@ public class EnemyManager : MonoBehaviour {
 	private Enemy currentEnemy;
 
 	// public accessors
-	public Player getCurrentEnemy(){
+	public Enemy getCurrentEnemy(){
 		return getInstance().currentEnemy;
 	}
-	public Player setCurrentEnemy(Enemy obj){
+	public Enemy setCurrentEnemy(Enemy obj){
 		//currentPlayer = obj;
 		return getInstance().currentEnemy = obj;
 	}
