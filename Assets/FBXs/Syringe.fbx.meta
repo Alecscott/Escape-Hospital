@@ -1,23 +1,18 @@
 fileFormatVersion: 2
-guid: 941e2f895bdf6c84fbdc4a0738750523
-timeCreated: 1520636818
+guid: bea8d52a90f06ac4998f16e1f0f93844
+timeCreated: 1520646437
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: SyringeMat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: pCube3
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PillBottleMat02
-    second: {fileID: 2100000, guid: 194c9689c335b1a4fb44554ecbf1edb4, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 1
