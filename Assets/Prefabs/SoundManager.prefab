@@ -9,17 +9,28 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
+<<<<<<< HEAD
   m_RootGameObject: {fileID: 1178287155019640}
   m_IsPrefabParent: 1
 --- !u!1 &1178287155019640
+=======
+  m_RootGameObject: {fileID: 1715145282714304}
+  m_IsPrefabParent: 1
+--- !u!1 &1715145282714304
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4933720134837890}
   - component: {fileID: 114632778301497670}
+=======
+  - component: {fileID: 4442572689339192}
+  - component: {fileID: 114436989587940998}
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -27,24 +38,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4933720134837890
+=======
+--- !u!4 &4442572689339192
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1178287155019640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 1715145282714304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6204033, y: 0.66859436, z: -3.074202}
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &114632778301497670
+=======
+--- !u!114 &114436989587940998
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1178287155019640}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -52,3 +78,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips: []
+=======
+  m_GameObject: {fileID: 1715145282714304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
