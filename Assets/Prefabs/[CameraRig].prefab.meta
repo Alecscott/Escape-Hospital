@@ -1,12 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 98c91376fefc90e4598913645cbf84e2
-timeCreated: 1520642179
-=======
-guid: 2905359812dc30c49a3c3ffa38cf3409
-timeCreated: 1520646564
->>>>>>> 85111e4cb8949a8834851104a822bcca941e6af6
-licenseType: Pro
+timeCreated: 1522172680
+licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 100100000
