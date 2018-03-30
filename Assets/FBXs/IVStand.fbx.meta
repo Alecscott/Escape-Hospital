@@ -1,30 +1,19 @@
 fileFormatVersion: 2
-guid: 9228dd10315785d458a3ef9f30944323
-timeCreated: 1520636817
+guid: 069a8ea74362e834e8adbe43eda597e3
+timeCreated: 1522190371
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Door
-    100002: //RootNode
-    100004: WallWithDoor
-    400000: Door
-    400002: //RootNode
-    400004: WallWithDoor
-    2100000: WallWithDoorMat
-    2100002: DoorMat
-    2300000: Door
-    2300002: WallWithDoor
-    2300004: //RootNode
-    3300000: Door
-    3300002: WallWithDoor
-    3300004: //RootNode
-    4300000: WallWithDoor
-    4300002: Door
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: IVStand
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
