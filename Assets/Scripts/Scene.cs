@@ -12,7 +12,8 @@ public class Scene : MonoBehaviour {
 		Debug.Log (col.tag);
 		if (col.CompareTag ("Player")) {
 			Debug.Log ("Got to Scene Load");
-			SceneManager.LoadScene (levelName);
+			Initiate.Fade (levelName, Color.black, 2.0f);
+			//SceneManager.LoadScene (levelName);
 		}
 	}
 }

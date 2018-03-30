@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Lobby.unity
     guid: 9eff9c91b8c5604449b3a5e4a3707b30
+  - enabled: 1
+    path: Assets/PatientRooms.unity
+    guid: 85a6d391e5d07254a9248a4d09f0ba4a

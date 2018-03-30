@@ -7585,8 +7585,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 3, z: 5}
-  m_Center: {x: 0, y: 1, z: 2}
+  m_Size: {x: 4, y: 3, z: 3}
+  m_Center: {x: 0, y: 1, z: -1.5}
 --- !u!114 &1313092060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7598,7 +7598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5fdc8e58c1173499b5bca7abede875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Lobby
+  levelName: PatientRooms
 --- !u!54 &1313092061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7968,6 +7968,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a2524265fdcda1449ef2da8c457a49e, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1340484492 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 3a2524265fdcda1449ef2da8c457a49e, type: 3}
+  m_PrefabInternal: {fileID: 1340484491}
+--- !u!114 &1340484493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340484492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5fdc8e58c1173499b5bca7abede875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: PatientRooms
+--- !u!65 &1340484494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340484492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 3, z: 3}
+  m_Center: {x: 0, y: 1, z: -1.5}
 --- !u!1001 &1346023706
 Prefab:
   m_ObjectHideFlags: 0
