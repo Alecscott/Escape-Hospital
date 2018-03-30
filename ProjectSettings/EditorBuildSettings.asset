@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Maternity Ward.unity
+    guid: 245a134a14d642848b77e20aa7dd8d96
+  - enabled: 1
+    path: Assets/Lobby.unity
+    guid: 9eff9c91b8c5604449b3a5e4a3707b30

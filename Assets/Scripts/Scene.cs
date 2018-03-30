@@ -8,8 +8,10 @@ public class Scene : MonoBehaviour {
 	public string levelName;
 
 	// Use this for initialization
-	void onTriggerEnter(Collider col){
+	void OnTriggerEnter(Collider col){
+		Debug.Log (col.tag);
 		if (col.CompareTag ("Player")) {
+			Debug.Log ("Got to Scene Load");
 			SceneManager.LoadScene (levelName);
 		}
 	}
