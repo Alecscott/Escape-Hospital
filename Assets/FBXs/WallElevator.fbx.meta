@@ -8,19 +8,34 @@ ModelImporter:
     100000: ElevatorDoor
     100002: //RootNode
     100004: WallElevator1
+    100006: WallElevator
     400000: ElevatorDoor
     400002: //RootNode
     400004: WallElevator1
+    400006: WallElevator
     2100000: ElevatorDoorMat
     2100002: WallElevatorMat
     2300000: ElevatorDoor
     2300002: WallElevator1
+    2300004: WallElevator
     3300000: ElevatorDoor
     3300002: WallElevator1
+    3300004: WallElevator
     4300000: ElevatorDoor
     4300002: WallElevator1
+    4300004: WallElevator
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElevatorDoorMat
+    second: {fileID: 2100000, guid: 34c5cdfdf648fcd4691f993f0d014658, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallElevatorMat
+    second: {fileID: 2100000, guid: d8a35664c571c24418054fbccd780a6f, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

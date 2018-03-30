@@ -1,13 +1,15 @@
 fileFormatVersion: 2
 guid: d94054ba8b7fde3439345549949afb02
-timeCreated: 1520636818
-licenseType: Pro
+timeCreated: 1522449410
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: WallWithWindow
+    2100000: GlassMat
+    2100002: WallMat1
+    2100004: WallMat
     2300000: //RootNode
     3300000: //RootNode
     4300000: WallWindow

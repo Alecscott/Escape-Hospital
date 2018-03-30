@@ -11,8 +11,14 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube3
+    4300002: Syringe
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SyringeMat
+    second: {fileID: 2100000, guid: 86030609aca693f4cb39b1b01eb714fd, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
