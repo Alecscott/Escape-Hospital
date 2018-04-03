@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8685aa8b122a9cb479718973d0f9b7ce
-timeCreated: 1522788171
+guid: bb79e2ca8fa86dd4e9b85dd405b6a42c
+timeCreated: 1522793653
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: PlasticTub2
-    4300002: Bassinet
+    4300000: Baby
     9500000: //RootNode
   materials:
     importMaterials: 1
