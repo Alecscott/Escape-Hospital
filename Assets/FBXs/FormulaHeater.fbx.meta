@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: c4488ebf2e2ef3546a1221c00c37d2db
+guid: ebb0426d81cfda641a622ea4d9b18202
+timeCreated: 1522792776
+licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -7,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube17
+    4300000: FormulaHeater
     9500000: //RootNode
   materials:
     importMaterials: 1
