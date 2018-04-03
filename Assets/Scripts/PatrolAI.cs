@@ -8,6 +8,7 @@ public class PatrolAI : MonoBehaviour {
 	public Transform[] points;
 	private int destPoint = 0;
 	private NavMeshAgent agent;
+	public bool chasingPlayer = false;
 
 	// Use this for initialization
 	void Start () {
@@ -27,8 +28,23 @@ public class PatrolAI : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (!agent.pathPending && agent.remainingDistance < 0.5f) {
+		if (!agent.pathPending && agent.remainingDistance < 0.5f && !chasingPlayer) {
 			GotoNextPoint ();
+		} else if (chasingPlayer) {
+			agent.destination = col.transform.position;
+		}
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.CompareTag ("Player")) {
+			chasingPlayer = true;
+			agent.destination = col.transform.position;
+		}
+	}
+
+	void OnTriggerExit(Collider col){
+		if (col.CompareTag ("Player")) {
+			chasingPlayer = true;
 		}
 	}
 }
