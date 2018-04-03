@@ -9,22 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1367736936437774}
+  m_RootGameObject: {fileID: 1238583851296486}
   m_IsPrefabParent: 1
---- !u!1 &1367736936437774
+--- !u!1 &1238583851296486
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4814433016555288}
-  - component: {fileID: 33753412148342630}
-  - component: {fileID: 65463798601703768}
-  - component: {fileID: 23643289707582234}
-  - component: {fileID: 54129607145526548}
-  - component: {fileID: 195115265492490772}
-  - component: {fileID: 114369646436385876}
+  - component: {fileID: 4469729729037850}
+  - component: {fileID: 33820783586392266}
+  - component: {fileID: 65512617050676586}
+  - component: {fileID: 23861488167892344}
+  - component: {fileID: 54449928873093702}
+  - component: {fileID: 195022974458318998}
+  - component: {fileID: 114534942064258130}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -32,25 +32,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4814433016555288
+--- !u!4 &4469729729037850
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56, y: 1.55, z: -27.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23643289707582234
+--- !u!23 &23861488167892344
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -77,19 +77,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33753412148342630
+--- !u!33 &33820783586392266
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54129607145526548
+--- !u!54 &54449928873093702
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -99,35 +99,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65463798601703768
+--- !u!65 &65512617050676586
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 20}
   m_Center: {x: 0, y: 0, z: 10}
---- !u!114 &114369646436385876
+--- !u!114 &114534942064258130
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b6a82bc785ebbe4bb240740074261a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a219135d36c9ed45ae8d4feb08cdaa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!195 &195115265492490772
+--- !u!195 &195022974458318998
 NavMeshAgent:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367736936437774}
+  m_GameObject: {fileID: 1238583851296486}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
