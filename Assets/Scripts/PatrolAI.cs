@@ -31,7 +31,7 @@ public class PatrolAI : MonoBehaviour {
 		if (!agent.pathPending && agent.remainingDistance < 0.5f && !chasingPlayer) {
 			GotoNextPoint ();
 		} else if (chasingPlayer) {
-			agent.destination = col.transform.position;
+			//agent.destination = col.transform.position;
 		}
 	}
 
