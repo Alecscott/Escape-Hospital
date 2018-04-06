@@ -16,16 +16,16 @@ public class ParticleShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !p.isPlaying){
+		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing){
 			p = (ParticleSystem)Instantiate (particleEffect,player.transform.position,player.transform.rotation);
 			Debug.Log ("firing");
 			firing = true;
 			p.Play ();
+			Destroy (p, p.main.duration);
 		}
-		if((Input.GetAxis("RightMainTrigger") == 0|| Input.GetAxis("LeftMainTrigger") == 0)&&p.isPlaying){
+		if((Input.GetAxis("RightMainTrigger") == 0 && Input.GetAxis("LeftMainTrigger") == 0) && firing){
 			//Debug.Log ("stop firing");
-			p.Stop();
-			Destroy (p);
+			//p.Stop();
 			firing = false;
 		}
 	}
