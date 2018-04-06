@@ -17,9 +17,9 @@ public class ParticleShoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing){
-			p = (ParticleSystem)Instantiate (particleEffect,player.transform.position,player.transform.rotation);
+            firing = true;
+            p = (ParticleSystem)Instantiate (particleEffect,player.transform.position,player.transform.rotation);
 			Debug.Log ("firing");
-			firing = true;
 			p.Play ();
 			Destroy (p, p.main.duration);
 		}
