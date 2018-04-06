@@ -9,6 +9,7 @@ public class PatrolAI : MonoBehaviour {
 	private int destPoint = 0;
 	private NavMeshAgent agent;
 	public bool chasingPlayer = false;
+	private Transform player;
 
 	// Use this for initialization
 	void Start () {
@@ -31,20 +32,21 @@ public class PatrolAI : MonoBehaviour {
 		if (!agent.pathPending && agent.remainingDistance < 0.5f && !chasingPlayer) {
 			GotoNextPoint ();
 		} else if (chasingPlayer) {
-			//agent.destination = col.transform.position;
+			agent.destination = player.position;
 		}
 	}
 
 	void OnTriggerEnter(Collider col){
 		if (col.CompareTag ("Player")) {
 			chasingPlayer = true;
-			agent.destination = col.transform.position;
+			player = col.transform;
+			agent.destination = player.position;
 		}
 	}
 
 	void OnTriggerExit(Collider col){
 		if (col.CompareTag ("Player")) {
-			chasingPlayer = true;
+			chasingPlayer = false;
 		}
 	}
 }
