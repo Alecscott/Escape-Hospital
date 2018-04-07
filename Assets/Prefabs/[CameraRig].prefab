@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4174374230461874}
   - component: {fileID: 114222926467792474}
   - component: {fileID: 114810876161628684}
+  - component: {fileID: 114439900100702032}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -74,6 +75,7 @@ GameObject:
   - component: {fileID: 4961588030537200}
   - component: {fileID: 114220221342152162}
   - component: {fileID: 114501527316360644}
+  - component: {fileID: 114740440160182458}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -650,9 +652,9 @@ MonoBehaviour:
   controllerSmoothingMode: 2
   controllerSmoothingCacheSize: 3
   _movingInertia: 1
-  movingInertiaTimeToStopAtMaxSpeed: 2
+  movingInertiaTimeToStopAtMaxSpeed: 3
   _stoppingInertia: 1
-  stoppingInertiaTimeToStopAtMaxSpeed: 1
+  stoppingInertiaTimeToStopAtMaxSpeed: 2.5
   raycastGroundLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -773,6 +775,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   origin: {fileID: 0}
+--- !u!114 &114439900100702032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208491803035684}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
+    type: 2}
+  firing: 0
+  player: {fileID: 1913207983379702}
 --- !u!114 &114501527316360644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -784,8 +801,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 0}
+  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
+    type: 2}
   firing: 0
+  player: {fileID: 1913207983379702}
 --- !u!114 &114511297765297802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -817,19 +836,36 @@ MonoBehaviour:
   _head: {fileID: 4062244215266150}
   _ears: {fileID: 4586205907784216}
   wireframe: 0
+--- !u!114 &114740440160182458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1529971503849648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 198370030976892862, guid: 4ce4d2e77559dfb49987c58d0b575a95,
+    type: 2}
+  firing: 0
+  player: {fileID: 1913207983379702}
 --- !u!114 &114810876161628684
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208491803035684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 0}
+  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
+    type: 2}
   firing: 0
+  player: {fileID: 1913207983379702}
 --- !u!114 &114912060860371370
 MonoBehaviour:
   m_ObjectHideFlags: 1
