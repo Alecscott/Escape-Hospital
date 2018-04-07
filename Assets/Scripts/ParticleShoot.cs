@@ -8,25 +8,40 @@ public class ParticleShoot : MonoBehaviour {
 	public bool firing;
 	public GameObject player;
 	private ParticleSystem p;
+    private ParticleSystem.MainModule main;
 
-	// Use this for initialization
-	void Start () {
-		firing = false;
+    // Use this for initialization
+    void Start () {
+        p = null;
+        //main = p.main;
+        //main.loop = false;
+        firing = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing){
+
+            if (p == null)
+            {
+                p = (ParticleSystem)Instantiate(particleEffect, player.transform.position, player.transform.rotation);
+                
+            }
+            
+            main = p.main;
+
             firing = true;
-            p = (ParticleSystem)Instantiate (particleEffect,player.transform.position,player.transform.rotation);
+            
 			Debug.Log ("firing");
 			p.Play ();
-			Destroy (p, p.main.duration);
+            main.loop = true;
+			
 		}
 		if((Input.GetAxis("RightMainTrigger") == 0 && Input.GetAxis("LeftMainTrigger") == 0) && firing){
 			//Debug.Log ("stop firing");
-			//p.Stop();
-			firing = false;
+			p.Stop();
+            main.loop = false;
+            firing = false;
 		}
 	}
 }
