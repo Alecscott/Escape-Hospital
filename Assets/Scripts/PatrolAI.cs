@@ -15,7 +15,7 @@ public class PatrolAI : MonoBehaviour {
 	void Start () {
 		agent = GetComponent<NavMeshAgent> ();
 		agent.autoBraking = false;
-
+		StartCoroutine (FindPlayer);
 		GotoNextPoint ();
 	}
 
@@ -35,18 +35,20 @@ public class PatrolAI : MonoBehaviour {
 			agent.destination = player.position;
 		}
 	}
-
-	void OnTriggerEnter(Collider col){
-		if (col.CompareTag ("Player")) {
-			chasingPlayer = true;
-			player = col.transform;
-			agent.destination = player.position;
+	IEnumerator FindPlayer(){
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit))
+		{
+			if (hit.collider.CompareTag ("Player")) {
+				chasingPlayer = true;
+				player = hit.transform;
+				Debug.Log("Raycast Hit");
+			} else {
+				WaitForSeconds (5);
+				chasingPlayer = false;
+			}
 		}
 	}
 
-	void OnTriggerExit(Collider col){
-		if (col.CompareTag ("Player")) {
-			chasingPlayer = false;
-		}
-	}
+
 }

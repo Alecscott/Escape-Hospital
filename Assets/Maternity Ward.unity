@@ -12109,7 +12109,18 @@ Prefab:
       propertyPath: points.Array.data[3]
       value: 
       objectReference: {fileID: 1951639333}
-    m_RemovedComponents: []
+    - target: {fileID: 65058012715112874, guid: 697709e25efc60845aba1634a4e47023,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172774988418718, guid: 697709e25efc60845aba1634a4e47023,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 65058012715112874, guid: 697709e25efc60845aba1634a4e47023, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 697709e25efc60845aba1634a4e47023, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &702395493

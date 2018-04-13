@@ -22,11 +22,13 @@ public class ParticleShoot : MonoBehaviour {
 	void Update () {
 		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing){
 
-            if (p == null)
-            {
-                p = (ParticleSystem)Instantiate(particleEffect, player.transform.position, player.transform.rotation);
+			if (p == null) {
+				p = (ParticleSystem)Instantiate (particleEffect, player.transform.position, player.transform.rotation);
                 
-            }
+			} else {
+				p.transform.position = player.transform.position;
+				p.transform.rotation = player.transform.rotation;
+			}
             
             main = p.main;
 
