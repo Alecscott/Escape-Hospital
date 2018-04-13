@@ -10,7 +10,7 @@ public class ParticleShoot : MonoBehaviour {
 	public GameObject player;
 	private ParticleSystem p;
     private ParticleSystem.MainModule main;
-	public int ammoCount = 0;
+	//public int ammoCount = 0;
 	public Text uiText;
 
     // Use this for initialization
@@ -23,12 +23,14 @@ public class ParticleShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing && ammoCount>0){
+		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1 || Input.GetKeyDown(KeyCode.F)) && !firing){
 
 			if (p == null) {
+				Debug.Log("System Created");
 				p = (ParticleSystem)Instantiate (particleEffect, player.transform.position, player.transform.rotation);
                 
 			} else {
+				Debug.Log ("System Position Updated");
 				p.transform.position = player.transform.position;
 				p.transform.rotation = player.transform.rotation;
 			}
@@ -39,7 +41,8 @@ public class ParticleShoot : MonoBehaviour {
             
 			Debug.Log ("firing");
 			p.Play ();
-			ammoCount--;
+			Debug.Log ("Should Be Playing");
+			//ammoCount--;
             main.loop = true;
 			
 		}
@@ -49,6 +52,6 @@ public class ParticleShoot : MonoBehaviour {
             main.loop = false;
             firing = false;
 		}
-		uiText.text = ammoCount.ToString;
+		//uiText.text = ammoCount.ToString();
 	}
 }
