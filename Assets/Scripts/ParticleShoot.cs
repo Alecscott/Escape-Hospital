@@ -12,6 +12,7 @@ public class ParticleShoot : MonoBehaviour {
     private ParticleSystem.MainModule main;
 	public int ammoCount = 0;
 	public Text uiText;
+	public float vommitTime = 1;
 
     // Use this for initialization
     void Start () {
@@ -42,7 +43,6 @@ public class ParticleShoot : MonoBehaviour {
 			Debug.Log ("firing");
 			p.Play ();
 			Debug.Log ("Should be firing");
-			ammoCount--;
             main.loop = true;
 			
 		}
@@ -53,5 +53,12 @@ public class ParticleShoot : MonoBehaviour {
             firing = false;
 		}
 		uiText.text = ammoCount.ToString();
+		if (p.isPlaying) {
+			
+		}
+	}
+	IEnumerator whilePlaying(){
+		yield return new WaitForSeconds (vommitTime);
+		ammoCount--;
 	}
 }
