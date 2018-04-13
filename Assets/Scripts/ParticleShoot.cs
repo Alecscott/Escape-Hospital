@@ -54,7 +54,7 @@ public class ParticleShoot : MonoBehaviour {
 		}
 		uiText.text = ammoCount.ToString();
 		if (p.isPlaying) {
-			
+			StartCoroutine (whilePlaying ());
 		}
 	}
 	IEnumerator whilePlaying(){
