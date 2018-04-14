@@ -10,9 +10,9 @@ public class ParticleShoot : MonoBehaviour {
 	public GameObject player;
 	private ParticleSystem p;
     private ParticleSystem.MainModule main;
-	public int ammoCount = 0;
+	public float ammoCount = 0.0f;
 	public Text uiText;
-	public float vommitTime = 1;
+	public float vomitTime = 1;
 
     // Use this for initialization
     void Start () {
@@ -24,41 +24,40 @@ public class ParticleShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1 || Input.GetKeyDown(KeyCode.F)) && !firing && ammoCount>0){
+        if ((Input.GetAxis("RightMainTrigger") == 1 || Input.GetAxis("LeftMainTrigger") == 1) && !firing && ammoCount > 0)
+        {
 
-			if (p == null) {
-				Debug.Log("System Created");
+            if (p == null) {
+				Debug.Log("Initializing particle");
 				p = (ParticleSystem)Instantiate (particleEffect, player.transform.position, player.transform.rotation);
                 
 			} else {
-				Debug.Log ("System Position Updated");
+				Debug.Log ("Particle Position Updated");
 				p.transform.position = player.transform.position;
 				p.transform.rotation = player.transform.rotation;
 			}
             
             main = p.main;
 
-            firing = true;
             
-			Debug.Log ("firing");
-			p.Play ();
-			Debug.Log ("Should be firing");
+            firing = true;
+            Debug.Log("firing");
+            p.Play();
+
             main.loop = true;
 			
 		}
-		if((Input.GetAxis("RightMainTrigger") == 0 && Input.GetAxis("LeftMainTrigger") == 0) && firing){
+        if (firing)
+        {
+            ammoCount -= Time.deltaTime;
+        }
+
+        if (((Input.GetAxis("RightMainTrigger") == 0 && Input.GetAxis("LeftMainTrigger") == 0) && firing)||ammoCount<=0){
 			//Debug.Log ("stop firing");
 			p.Stop();
             main.loop = false;
             firing = false;
 		}
-		uiText.text = ammoCount.ToString();
-		if (p.isPlaying) {
-			StartCoroutine (whilePlaying ());
-		}
-	}
-	IEnumerator whilePlaying(){
-		yield return new WaitForSeconds (vommitTime);
-		ammoCount--;
+
 	}
 }
