@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpeningDoor : MonoBehaviour {
+public class OpeningDoor5: MonoBehaviour {
 	private GameObject door;
 	// Use this for initialization
 	void Start () {
-		door = GameObject.FindGameObjectWithTag ("Door1");
+		door = GameObject.FindGameObjectWithTag ("Door5");
 		Debug.Log ("found");
 	}
 	
@@ -17,6 +17,7 @@ public class OpeningDoor : MonoBehaviour {
 	void OnTriggerEnter (Collider Col){
 		if (Col.gameObject.tag == "Player") {
 			door.GetComponent<Animator> ().SetBool ("Opening", true);
+			door.GetComponent<Animator> ().SetBool ("Cosing", false);
 			Debug.Log ("Open");
 		}
 	}
@@ -24,6 +25,7 @@ public class OpeningDoor : MonoBehaviour {
 	void OnTriggerExit (Collider Col){
 		if (Col.gameObject.tag == "Player") {
 			door.GetComponent<Animator>().SetBool ("Closing", true);
+			door.GetComponent<Animator>().SetBool ("Opening", false);
 			Debug.Log ("Close");
 		}
 	}
