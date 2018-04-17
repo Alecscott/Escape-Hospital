@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f5daf31b17fbe66409a9bdeb5ce7d5dd
-timeCreated: 1523985764
+guid: bf758f6bab6f4ae4fb21a495f7a57f96
+timeCreated: 1524003704
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -9,11 +9,11 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: pCube19
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
