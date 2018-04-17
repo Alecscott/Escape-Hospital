@@ -77,18 +77,15 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFilterTypeDirect: 0
-    m_PVRFilterTypeIndirect: 0
-    m_PVRFilterTypeAO: 0
+    m_PVRFiltering: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-    m_PVRFilteringAtrousPositionSigmaIndirect: 2
-    m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -110,8 +107,6 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-    debug:
-      m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 4a6fd23958ea942499045554174d7c3d, type: 2}
 --- !u!1001 &1802733
 Prefab:
@@ -679,7 +674,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -1531,7 +1526,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -1827,7 +1822,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112534333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5476007, y: -8.6147995, z: -1.343317}
+  m_LocalPosition: {x: 3.5476007, y: -9.2, z: -1.343317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2118590043}
@@ -1862,6 +1857,8 @@ Transform:
   - {fileID: 2101499117}
   - {fileID: 811400636}
   - {fileID: 1666053648}
+  - {fileID: 1425986305}
+  - {fileID: 1697056079}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2869,16 +2866,16 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
-  m_Range: 6.699146
+  m_Range: 4.568637
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -4196,7 +4193,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 3.6870556
   m_SpotAngle: 30
@@ -4205,7 +4202,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -4341,7 +4338,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 4.016676
   m_SpotAngle: 30
@@ -4350,7 +4347,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -4614,7 +4611,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -5421,7 +5418,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -5743,7 +5740,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4268192372861930, guid: fb7a133e3dd65b44bbb74dbdba868148, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb7a133e3dd65b44bbb74dbdba868148, type: 2}
@@ -7058,7 +7055,6 @@ Mesh:
     firstByte: 0
     indexCount: 24
     topology: 0
-    baseVertex: 0
     firstVertex: 0
     vertexCount: 8
     localAABB:
@@ -7076,7 +7072,6 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexFormat: 0
   m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
   m_Skin: []
   m_VertexData:
@@ -7437,7 +7432,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -7564,7 +7559,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -7865,7 +7860,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -8197,7 +8192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4467541126289306, guid: 8493c3eb05717314fa498b427d9c8ab3, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8493c3eb05717314fa498b427d9c8ab3, type: 2}
@@ -8382,7 +8377,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4280114242460762, guid: 98c91376fefc90e4598913645cbf84e2, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114495654600785952, guid: 98c91376fefc90e4598913645cbf84e2,
         type: 2}
@@ -8413,6 +8408,10 @@ Prefab:
         type: 2}
       propertyPath: ammoCount
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976709493445758, guid: 98c91376fefc90e4598913645cbf84e2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114439900100702032, guid: 98c91376fefc90e4598913645cbf84e2, type: 2}
@@ -9818,7 +9817,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -12080,7 +12079,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -12888,7 +12887,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -13731,7 +13730,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 8.5620575
   m_SpotAngle: 30
@@ -13740,7 +13739,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -15227,7 +15226,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -15882,7 +15881,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 4.500947
   m_SpotAngle: 30
@@ -15891,7 +15890,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -18551,7 +18550,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -19898,7 +19897,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -20740,7 +20739,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -20924,7 +20923,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -21774,9 +21773,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9228dd10315785d458a3ef9f30944323, type: 3}
 --- !u!1001 &1158193944
@@ -22683,7 +22682,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -22807,16 +22806,16 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
-  m_Range: 6.7875957
+  m_Range: 6.0864315
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -22935,7 +22934,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -24747,7 +24746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c76c1ba65028704ab85757022936380, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c76c1ba65028704ab85757022936380, type: 3}
       propertyPath: m_LocalScale.x
@@ -24781,9 +24780,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9c76c1ba65028704ab85757022936380, type: 3}
 --- !u!21 &1317566532
@@ -24903,7 +24902,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 7.053802
   m_SpotAngle: 30
@@ -24912,7 +24911,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -25451,7 +25450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3a2524265fdcda1449ef2da8c457a49e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3a2524265fdcda1449ef2da8c457a49e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -25495,9 +25494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc5fdc8e58c1173499b5bca7abede875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutImg: {fileID: 0}
-  fadeSpeed: 0.8
-  levelName: 
 --- !u!65 &1340484494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25921,7 +25917,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -27352,6 +27348,71 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 457789216c1a389418c6d29c0a6c4651, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1425986304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1425986305}
+  - component: {fileID: 1425986306}
+  m_Layer: 0
+  m_Name: Point light (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425986305
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425986304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.27, y: 10.6147995, z: 4.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 112534334}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1425986306
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425986304}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
+  m_Intensity: 1
+  m_Range: 3.6870556
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.454
+    m_Bias: 0.1
+    m_NormalBias: 0.1
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1427091554
 Prefab:
   m_ObjectHideFlags: 0
@@ -28314,7 +28375,7 @@ Transform:
   - {fileID: 1277485820}
   - {fileID: 559210760}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1467834842 stripped
 Transform:
@@ -29059,13 +29120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
-    type: 2}
-  firing: 0
-  player: {fileID: 1519538680}
-  ammoCount: 5
-  uiText: {fileID: 156179526}
-  vomitTime: 1
 --- !u!1001 &1522183759
 Prefab:
   m_ObjectHideFlags: 0
@@ -31270,7 +31324,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -31335,7 +31389,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -31400,7 +31454,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -31968,6 +32022,71 @@ Transform:
   m_PrefabParentObject: {fileID: 4773681227559702, guid: 457789216c1a389418c6d29c0a6c4651,
     type: 2}
   m_PrefabInternal: {fileID: 1689889370}
+--- !u!1 &1697056078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1697056079}
+  - component: {fileID: 1697056080}
+  m_Layer: 0
+  m_Name: Point light (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1697056079
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697056078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.20999908, y: 10.6147995, z: 4.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 112534334}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1697056080
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1697056078}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
+  m_Intensity: 1
+  m_Range: 4.016676
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.454
+    m_Bias: 0.1
+    m_NormalBias: 0.1
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1697170051
 Prefab:
   m_ObjectHideFlags: 0
@@ -32043,16 +32162,16 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
-  m_Range: 6.794157
+  m_Range: 5.085139
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -32318,7 +32437,7 @@ Transform:
   - {fileID: 1395133285}
   - {fileID: 776228397}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1708118607 stripped
 Transform:
@@ -33177,7 +33296,7 @@ Transform:
   - {fileID: 1311232278}
   - {fileID: 2104647734}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782088307
 Prefab:
@@ -34630,7 +34749,7 @@ Transform:
   - {fileID: 1495591580}
   - {fileID: 981282011}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1852970733
 Prefab:
@@ -36023,7 +36142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4684595122408028, guid: ecb5a06971ba1e04d93d70702fe44986, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecb5a06971ba1e04d93d70702fe44986, type: 2}
@@ -36676,9 +36795,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9228dd10315785d458a3ef9f30944323, type: 3}
 --- !u!1 &1984181072
@@ -36715,7 +36834,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -39015,7 +39134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92bf20798b387a04c8d8a9d881d7db37, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92bf20798b387a04c8d8a9d881d7db37, type: 3}
       propertyPath: m_LocalScale.x
@@ -39246,7 +39365,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -39529,7 +39648,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
@@ -39635,7 +39754,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
+  m_Color: {r: 0.8904628, g: 0.92922235, b: 0.99264705, a: 1}
   m_Intensity: 1
   m_Range: 7.5896587
   m_SpotAngle: 30
@@ -39644,7 +39763,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.454
     m_Bias: 0.1
     m_NormalBias: 0.1
     m_NearPlane: 0.2
