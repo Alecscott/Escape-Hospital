@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f5daf31b17fbe66409a9bdeb5ce7d5dd
-timeCreated: 1523985764
+guid: ab0f3a9560048034c9f8a2f077856279
+timeCreated: 1523992753
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: CheeseBurger
     9500000: //RootNode
   materials:
     importMaterials: 1
