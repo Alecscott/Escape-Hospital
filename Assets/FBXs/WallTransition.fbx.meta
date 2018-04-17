@@ -1,22 +1,23 @@
 fileFormatVersion: 2
-guid: ee286eb68cdd3f240a6e27400e0a6730
-timeCreated: 1523399567
+guid: 39367b553e516c141af37ef7f013f73d
+timeCreated: 1523993809
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: curve2
-    400000: //RootNode
-    400002: curve2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: polySurface4
-    4300002: Counter
+    100000: polySurface6
+    100002: WallTransition
+    100004: //RootNode
+    400000: polySurface6
+    400002: WallTransition
+    400004: //RootNode
+    2300000: WallTransition
+    3300000: WallTransition
+    4300000: WallTransition
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: ee286eb68cdd3f240a6e27400e0a6730
-timeCreated: 1523399567
+guid: 935092c247bca9a4e8edcf2702c909a9
+timeCreated: 1523998808
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: curve2
     400000: //RootNode
-    400002: curve2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface4
-    4300002: Counter
+    4300000: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
