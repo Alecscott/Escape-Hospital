@@ -425,6 +425,7 @@ ModelImporter:
     2300034: pasted__pCube4 3
     2300036: pasted__pCube4 4
     2300038: pasted__pCube4 5
+    2300040: //RootNode
     3300000: breadbottom
     3300002: breadtop
     3300004: cheese2
@@ -445,6 +446,7 @@ ModelImporter:
     3300034: pasted__pCube4 3
     3300036: pasted__pCube4 4
     3300038: pasted__pCube4 5
+    3300040: //RootNode
     4300000: breadtop
     4300002: breadbottom
     4300004: meat
@@ -465,10 +467,11 @@ ModelImporter:
     4300034: pasted__pCube13
     4300036: pasted__pCube13
     4300038: pasted__pCube13
+    4300040: Sandwich
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -498,8 +501,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
