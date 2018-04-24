@@ -6,10 +6,19 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Baby
+    100004: Bassinet1
     400000: //RootNode
+    400002: Baby
+    400004: Bassinet1
     2300000: //RootNode
+    2300002: Baby
+    2300004: Bassinet1
     3300000: //RootNode
+    3300002: Baby
+    3300004: Bassinet1
     4300000: Baby
+    4300002: Bassinet1
     9500000: //RootNode
   materials:
     importMaterials: 1

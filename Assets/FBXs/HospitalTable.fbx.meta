@@ -35,6 +35,7 @@ ModelImporter:
     3300002: //RootNode
     4300000: pCube6
     4300002: HospitalTable
+    4300004: Wheel7
     9500000: //RootNode
   materials:
     importMaterials: 1
