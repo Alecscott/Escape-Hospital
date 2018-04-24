@@ -10,7 +10,7 @@ public class ParticleShoot : MonoBehaviour {
 	public GameObject player;
 	private ParticleSystem p;
     private ParticleSystem.MainModule main;
-	public float ammoCount = 0.0f;
+	public static float ammoCount = 0.0f;
 	public Text uiText;
 	public float vomitTime = 1;
 
