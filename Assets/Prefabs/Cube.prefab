@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734218454123302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9200001, y: 1.7144697, z: -2.3700485}
+  m_LocalPosition: {x: 0.3, y: 0.89, z: 16.787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,9 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f99e279249b72844aeaca2f21a77d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
   chasingPlayer: 0
-  timeChase: 0
+  timeChase: 2
   enemySpawn: {fileID: 0}
   fadeOutImg: {fileID: 0}
   fadeSpeed: 0.8
