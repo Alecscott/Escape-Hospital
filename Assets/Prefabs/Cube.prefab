@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4137047983684018}
   - component: {fileID: 33848855804856822}
-  - component: {fileID: 65058012715112874}
   - component: {fileID: 23230264427435330}
   - component: {fileID: 114172774988418718}
   - component: {fileID: 195170062286539234}
@@ -86,18 +85,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734218454123302}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65058012715112874
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1734218454123302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.57, y: 1, z: 10}
-  m_Center: {x: 0, y: 0, z: 5}
 --- !u!65 &65854564253378146
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -118,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734218454123302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a219135d36c9ed45ae8d4feb08cdaa8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f99e279249b72844aeaca2f21a77d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   points:
@@ -127,6 +114,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   chasingPlayer: 0
+  timeChase: 2
 --- !u!195 &195170062286539234
 NavMeshAgent:
   m_ObjectHideFlags: 1
