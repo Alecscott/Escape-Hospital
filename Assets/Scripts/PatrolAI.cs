@@ -21,11 +21,17 @@ public class PatrolAI : MonoBehaviour {
 
 	public string levelName;
 
+	// FOV
+	public Vector3 FOVCenter;
+	public float FOVRadius;
+
 	// Use this for initialization
 	void Start () {
 		agent = GetComponent<NavMeshAgent> ();
 		agent.autoBraking = false;
 		GotoNextPoint ();
+		FOVCenter = this.gameObject.transform.position + new Vector3 (0, 0, 5);
+		FOVRadius = 5.0f;
 	}
 
 	void GotoNextPoint(){
@@ -44,6 +50,8 @@ public class PatrolAI : MonoBehaviour {
 		} else if (chasingPlayer) {
 			agent.destination = player.position;
 		}
+
+		FOVCenter = this.gameObject.transform.position + new Vector3 (0, 0, 5);
 	}
 
 	void OnTriggerEnter(Collider col){
@@ -59,19 +67,34 @@ public class PatrolAI : MonoBehaviour {
 	}
 
 	IEnumerator FindPlayer(){
-		RaycastHit hit;
-			if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) {
-				if (hit.collider.CompareTag ("Player")) {
-					chasingPlayer = true;
-					player = hit.transform;
-					//Debug.Log ("Raycast Hit");
-				} else {
-					if (chasingPlayer == true) {
-						yield return new WaitForSeconds (timeChase);
-					}
-					chasingPlayer = false;
+//		RaycastHit hit;
+//			if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit)) {
+//				if (hit.collider.CompareTag ("Player")) {
+//					chasingPlayer = true;
+//					player = hit.transform;
+//					//Debug.Log ("Raycast Hit");
+//				} else {
+//					if (chasingPlayer == true) {
+//						yield return new WaitForSeconds (timeChase);
+//					}
+//					chasingPlayer = false;
+//				}
+//			}
+		Collider[] hitColliders = Physics.OverlapSphere(FOVCenter, FOVRadius);
+		int i = 0;
+		while (i < hitColliders.Length) {
+			if (hitColliders [i].CompareTag ("Player")) {
+				chasingPlayer = true;
+				player = hitColliders [i].transform;
+				Debug.Log ("Raycast hit");
+			} else {
+				if (chasingPlayer) {
+					yield return new WaitForSeconds (timeChase);
 				}
+				chasingPlayer = false;
 			}
+
+		}
 		}
 
 	private IEnumerator Fade(float fadeStart,float fadeEnd){
