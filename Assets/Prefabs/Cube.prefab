@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4137047983684018}
   - component: {fileID: 33848855804856822}
   - component: {fileID: 23230264427435330}
-  - component: {fileID: 114172774988418718}
   - component: {fileID: 195170062286539234}
   - component: {fileID: 65854564253378146}
+  - component: {fileID: 135412481719280788}
+  - component: {fileID: 114039328325951058}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -92,12 +93,12 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734218454123302}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114172774988418718
+--- !u!114 &114039328325951058
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,13 +109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f99e279249b72844aeaca2f21a77d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  points: []
   chasingPlayer: 0
-  timeChase: 2
+  timeChase: 0
+  enemySpawn: {fileID: 0}
+  fadeOutImg: {fileID: 0}
+  fadeSpeed: 0.8
+  levelName: Maternity Ward
+--- !u!135 &135412481719280788
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734218454123302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195170062286539234
 NavMeshAgent:
   m_ObjectHideFlags: 1

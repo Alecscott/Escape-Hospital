@@ -10,6 +10,7 @@ TagManager:
   - Door4
   - Door5
   - Door6
+  - Projectile
   layers:
   - Default
   - TransparentFX

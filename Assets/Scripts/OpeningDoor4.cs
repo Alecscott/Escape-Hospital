@@ -17,7 +17,7 @@ public class OpeningDoor4 : MonoBehaviour {
 	void OnTriggerEnter (Collider Col){
 		if (Col.gameObject.tag == "Player") {
 			door.GetComponent<Animator> ().SetBool ("Opening", true);
-			door.GetComponent<Animator> ().SetBool ("Cosing", false);
+			door.GetComponent<Animator> ().SetBool ("Closing", false);
 			Debug.Log ("Open");
 		}
 	}

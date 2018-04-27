@@ -16,8 +16,8 @@ public class Ammo : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
 		if (col.CompareTag ("Player")) {
-			ParticleShoot.ammoCount = ParticleShoot.ammoCount + 1;
-			Destroy(this.gameObject)
+			ParticleVomitShoot.ammoCount = ParticleVomitShoot.ammoCount + 20;
+			Destroy (this.gameObject);
 		}
 	}
 }
