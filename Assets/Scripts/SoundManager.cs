@@ -35,13 +35,14 @@ public class SoundManager : MonoBehaviour {
 		}
 	}
 
-	public void EndAudioClipRepeated(string clipName)
+	public void EndAudioClip(string clipName)
 	{
 		foreach (AudioClip clip in audioClips) 
 		{
 			if (clip.name == clipName) 
 			{
-
+				audioSource.clip = clip;
+				audioSource.Stop ();
 			}
 		}
 	}

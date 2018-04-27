@@ -13,6 +13,7 @@ public class ParticleVomitShoot : MonoBehaviour {
 	public static float ammoCount = 0.0f;
 	public Text uiText;
 	public float vomitTime = 1;
+	private SoundManager soundManager;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,8 @@ public class ParticleVomitShoot : MonoBehaviour {
 		//main = p.main;
 		//main.loop = false;
 		firing = false;
+		soundManager = (SoundManager)GameObject.Find ("SoundManager").GetComponent (typeof(SoundManager));
+
 	}
 
 	// Update is called once per frame
@@ -48,6 +51,7 @@ public class ParticleVomitShoot : MonoBehaviour {
 			p.Play();
 
 			main.loop = true;
+			soundManager.PlayAudioClip ("vomit");
 
 		}
 		if (firing)
@@ -58,6 +62,7 @@ public class ParticleVomitShoot : MonoBehaviour {
 		if (((Input.GetAxis("RightMainTrigger") == 0 && Input.GetAxis("LeftMainTrigger") == 0) && firing)||ammoCount<=0){
 			//Debug.Log ("stop firing");
 			p.Stop();
+			soundManager.EndAudioClip("vomit");
 			if (main.loop) {
 				main.loop = false;
 			}
