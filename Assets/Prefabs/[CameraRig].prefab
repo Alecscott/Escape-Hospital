@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4174374230461874}
   - component: {fileID: 114222926467792474}
-  - component: {fileID: 114810876161628684}
-  - component: {fileID: 114439900100702032}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -146,7 +144,6 @@ GameObject:
   - component: {fileID: 114912060860371370}
   - component: {fileID: 23729162136953710}
   - component: {fileID: 33896298869040456}
-  - component: {fileID: 114495654600785952}
   - component: {fileID: 114087283869415854}
   - component: {fileID: 114083661129389488}
   m_Layer: 0
@@ -776,42 +773,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   origin: {fileID: 0}
---- !u!114 &114439900100702032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1208491803035684}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
-    type: 2}
-  firing: 0
-  player: {fileID: 1913207983379702}
-  ammoCount: 0
-  uiText: {fileID: 0}
-  vomitTime: 1
---- !u!114 &114495654600785952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1976709493445758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
-    type: 2}
-  firing: 0
-  player: {fileID: 1976709493445758}
-  ammoCount: 5
-  uiText: {fileID: 0}
-  vomitTime: 1
 --- !u!114 &114501527316360644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,7 +788,6 @@ MonoBehaviour:
     type: 2}
   firing: 0
   player: {fileID: 1913207983379702}
-  ammoCount: 0
   uiText: {fileID: 0}
   vomitTime: 1
 --- !u!114 &114511297765297802
@@ -876,25 +836,6 @@ MonoBehaviour:
     type: 2}
   firing: 0
   player: {fileID: 1913207983379702}
-  ammoCount: 0
-  uiText: {fileID: 0}
-  vomitTime: 1
---- !u!114 &114810876161628684
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1208491803035684}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4706df80e8260164faf2bfcd9b587773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleEffect: {fileID: 198664948595782392, guid: 4ce4d2e77559dfb49987c58d0b575a95,
-    type: 2}
-  firing: 0
-  player: {fileID: 1913207983379702}
-  ammoCount: 0
   uiText: {fileID: 0}
   vomitTime: 1
 --- !u!114 &114912060860371370
