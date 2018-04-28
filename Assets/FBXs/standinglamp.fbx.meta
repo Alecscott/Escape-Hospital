@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: StandingLamp
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StandingLampMat
+    second: {fileID: 2100000, guid: afcadd4a65c228f42a4fc79c7992a507, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

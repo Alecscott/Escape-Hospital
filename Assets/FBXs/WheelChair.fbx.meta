@@ -29,6 +29,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: WheelChairCloth
+    second: {fileID: 2100000, guid: a8c5f207dd4d5ea41899f630709d670e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelChairMat
+    second: {fileID: 2100000, guid: b3936012e85088246abbcd7542a13003, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelChairSpokes
+    second: {fileID: 2100000, guid: aeb8f9b100e06d844910b42fafb77f3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelChairWheelGrip
+    second: {fileID: 2100000, guid: 1387f96ab40423344af873d95a026549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelChairWheelMat
+    second: {fileID: 2100000, guid: 27fda988b675b26448447d514a0379d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: WheelchairMat
     second: {fileID: 2100000, guid: b3936012e85088246abbcd7542a13003, type: 2}
   - first:
