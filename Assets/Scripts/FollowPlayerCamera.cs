@@ -12,6 +12,7 @@ public class FollowPlayerCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		this.transform.position = player.transform.position;
 		this.transform.rotation = player.transform.rotation;
 	}
