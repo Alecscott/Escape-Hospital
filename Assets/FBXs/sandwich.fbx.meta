@@ -16,7 +16,32 @@ ModelImporter:
     3300000: //RootNode
     4300000: Sandwich
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BreadBottomMat
+    second: {fileID: 2100000, guid: 6ba9e260121ddf34c9dee5703be47e80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BreadTopMat
+    second: {fileID: 2100000, guid: f303916ae09f25c4db3a06adb8d04d02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LettuceMat
+    second: {fileID: 2100000, guid: 3174e8b7dc552574dae85434821a2aee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MeatMat
+    second: {fileID: 2100000, guid: 6c0e9fba93b58d5469ddf8e30f6c6921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SwissCheeseMat
+    second: {fileID: 2100000, guid: 57e9322d15e01bf40a3e9e1f4f82323f, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

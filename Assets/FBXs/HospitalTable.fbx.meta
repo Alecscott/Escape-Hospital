@@ -14,7 +14,22 @@ ModelImporter:
     3300000: //RootNode
     4300000: HospitalTable
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TableBodyMat
+    second: {fileID: 2100000, guid: 636edeb91521f9a4e81b6a46d76279de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TableTopMat
+    second: {fileID: 2100000, guid: dba78d649a7973d4982932172582592a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelMat
+    second: {fileID: 2100000, guid: 58c9cb010cde9c74cb6ff7eb46693a42, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

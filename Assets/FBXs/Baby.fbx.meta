@@ -26,6 +26,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: BabyMat
     second: {fileID: 2100000, guid: 42047739ac770b447bd2280f181ae2d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BabyWrapMat
+    second: {fileID: 2100000, guid: 422c7da143dec1b42ba112c3ece99c88, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

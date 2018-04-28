@@ -14,7 +14,22 @@ ModelImporter:
     3300000: //RootNode
     4300000: CheeseBurger
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BurgerBunMat
+    second: {fileID: 2100000, guid: 398268961c0a9b745807ee7fd4d45f1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BurgerMat
+    second: {fileID: 2100000, guid: 0f337622849af7a4eba013431e0479f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CheeseMat
+    second: {fileID: 2100000, guid: 4a15bca1b44c2f644a4739ed06b5cfaa, type: 2}
   materials:
     importMaterials: 1
     materialName: 1

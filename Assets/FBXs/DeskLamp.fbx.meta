@@ -14,7 +14,22 @@ ModelImporter:
     3300000: //RootNode
     4300000: DeskLamp
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DeskLampBaseMat
+    second: {fileID: 2100000, guid: e8ced3705835efe438545c745c4122ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DeskLampMat
+    second: {fileID: 2100000, guid: 98e32c70a8a461e40b01e34af2bece5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DeskLampShadeMat
+    second: {fileID: 2100000, guid: 0f56e89480637674b97885bf426bded1, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
