@@ -15,5 +15,6 @@ public class MovingObject : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
+		col.transform.position
 	}
 }

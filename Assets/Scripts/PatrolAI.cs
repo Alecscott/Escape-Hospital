@@ -68,8 +68,8 @@ public class PatrolAI : MonoBehaviour {
 
 	IEnumerator FindPlayer(){
 		RaycastHit hit;
-		RaycastHit hit1;
-		RaycastHit hit2;
+		//RaycastHit hit1;
+		//RaycastHit hit2;
 		if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out hit) ) {
 			if (hit.collider.CompareTag ("Player")) {
 					chasingPlayer = true;
@@ -83,31 +83,31 @@ public class PatrolAI : MonoBehaviour {
 				}
 			}
 
-		if (Physics.Raycast (transform.position + new Vector3(.5f,0,0), transform.TransformDirection (Vector3.forward), out hit1)) {
-			if (hit1.collider.CompareTag ("Player")) {
-				chasingPlayer = true;
-				player = hit1.transform;
-				//Debug.Log ("Raycast Hit");
-			} else {
-				if (chasingPlayer == true) {
-					yield return new WaitForSeconds (timeChase);
-				}
-				chasingPlayer = false;
-			}
-		}
-
-		if (Physics.Raycast (transform.position - new Vector3(-.5f,0,0), transform.TransformDirection (Vector3.forward), out hit2)) {
-			if (hit2.collider.CompareTag ("Player")) {
-				chasingPlayer = true;
-				player = hit2.transform;
-				//Debug.Log ("Raycast Hit");
-			} else {
-				if (chasingPlayer == true) {
-					yield return new WaitForSeconds (timeChase);
-				}
-				chasingPlayer = false;
-			}
-		}
+//		if (Physics.Raycast (transform.position + new Vector3(.5f,0,0), transform.TransformDirection (Vector3.forward), out hit1)) {
+//			if (hit1.collider.CompareTag ("Player")) {
+//				chasingPlayer = true;
+//				player = hit1.transform;
+//				Debug.Log ("Raycast Hit");
+//			} else {
+//				if (chasingPlayer == true) {
+//					yield return new WaitForSeconds (timeChase);
+//				}
+//				chasingPlayer = false;
+//			}
+//		}
+//
+//		if (Physics.Raycast (transform.position - new Vector3(-.5f,0,0), transform.TransformDirection (Vector3.forward), out hit2)) {
+//			if (hit2.collider.CompareTag ("Player")) {
+//				chasingPlayer = true;
+//				player = hit2.transform;
+//				Debug.Log ("Raycast Hit");
+//			} else {
+//				if (chasingPlayer == true) {
+//					yield return new WaitForSeconds (timeChase);
+//				}
+//				chasingPlayer = false;
+//			}
+//		}
 
 //		Collider[] hitColliders = Physics.OverlapSphere(FOVCenter, FOVRadius);
 //		int i = 0;
