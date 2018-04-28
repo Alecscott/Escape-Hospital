@@ -31,6 +31,7 @@ public class ParticleVomitShoot : MonoBehaviour {
 		if (p == null) {
 			Debug.Log("Initializing particle");
 			p = (ParticleSystem)Instantiate (particleEffect, player.transform.position, player.transform.rotation);
+			p.Stop ();
 
 		} 
 
