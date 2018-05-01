@@ -32,5 +32,5 @@ Material:
     - _Metallic: 0
     - _Tess: 4.9
     m_Colors:
-    - _Color: {r: 0.82590085, g: 0.9191176, b: 0.24329586, a: 1}
+    - _Color: {r: 0.9492901, g: 1, b: 0.63235295, a: 1}
     - _MeltColor: {r: 1, g: 1, b: 1, a: 1}

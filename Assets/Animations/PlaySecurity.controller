@@ -5,13 +5,13 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WalkingNurse
+  m_Name: PlaySecurity
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Play
-    m_StateMachine: {fileID: 1107696989565126426}
+    m_Name: WalkingSecurity
+    m_StateMachine: {fileID: 1107661191826027778}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -21,14 +21,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &1102858432169089358
+--- !u!1102 &1102814959706843712
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Walking
-  m_Speed: 2
+  m_Name: WalkingSecurityGuard
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -40,23 +40,23 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f6e4a14cf1923c24cb1e1d3bd95cdb93, type: 3}
+  m_Motion: {fileID: 7400000, guid: 211c37900fb3bc24ebbf4357dd96e7e2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1107 &1107696989565126426
+--- !u!1107 &1107661191826027778
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Play
+  m_Name: WalkingSecurity
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1102858432169089358}
-    m_Position: {x: 301.75, y: 68, z: 0}
+    m_State: {fileID: 1102814959706843712}
+    m_Position: {x: 300, y: 72, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -66,4 +66,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102858432169089358}
+  m_DefaultState: {fileID: 1102814959706843712}

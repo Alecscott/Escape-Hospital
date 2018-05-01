@@ -14,7 +14,7 @@ public class MovingObject : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider col){
-		col.transform.position
-	}
+	//void OnTriggerEnter(Collider col){
+		//col.transform.position;
+	//}
 }

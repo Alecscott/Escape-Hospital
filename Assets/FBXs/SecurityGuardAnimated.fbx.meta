@@ -1,163 +1,153 @@
 fileFormatVersion: 2
-guid: f6e4a14cf1923c24cb1e1d3bd95cdb93
-timeCreated: 1524868662
+guid: 211c37900fb3bc24ebbf4357dd96e7e2
+timeCreated: 1525197816
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Ankle_L
     100002: Ankle_R
-    100004: Bicep_L
-    100006: Bicep_R
-    100008: Calf_L
-    100010: Calf_R
-    100012: Clavicle_L
-    100014: Clavicle_R
-    100016: Elbow_L
-    100018: Elbow_R
-    100020: Fingers_L
-    100022: Fingers_R
-    100024: Foot_L
-    100026: Foot_R
-    100028: Forearm_L
-    100030: Forearm_R
-    100032: Hand_L
-    100034: Hand_R
-    100036: Head
-    100038: Heel_L
-    100040: Heel_R
-    100042: Hip_L
-    100044: Hip_R
-    100046: Knee_L
-    100048: Knee_R
-    100050: LowerBack
-    100052: MainBody
-    100054: MiddleBack
-    100056: Neck
-    100058: //RootNode
-    100060: NurseBody
-    100062: NurseCrocL
-    100064: NurseCrocR
-    100066: NurseGloveL
-    100068: NurseGloveR
-    100070: NurseShirt
-    100072: NurseThong
-    100074: Shoulder_L
-    100076: Shoulder_R
-    100078: Thigh_L
-    100080: Thigh_R
-    100082: Thumb_L
-    100084: Thumb_R
-    100086: ThumbTip_L
-    100088: ThumbTip_R
-    100090: Toe_L
-    100092: Toe_R
-    100094: UpperBack
-    100096: Wrist_L
-    100098: Wrist_R
+    100004: Calf_L
+    100006: Calf_R
+    100008: Clavicle_L
+    100010: Clavicle_R
+    100012: Foot_L
+    100014: Foot_R
+    100016: GuardBelt
+    100018: GuardBody
+    100020: GuardPants
+    100022: GuardShirt
+    100024: GuardShoeL
+    100026: GuardShoeR
+    100028: GuardSleevePinL
+    100030: GuardSleevePinR
+    100032: GuardTie
+    100034: Head
+    100036: Heel_L
+    100038: Heel_R
+    100040: Hip_L
+    100042: Hip_R
+    100044: Knee_L
+    100046: Knee_R
+    100048: LowerBack
+    100050: LowerSleeve_L
+    100052: LowerSleeve_R
+    100054: MainBody
+    100056: MiddleBack
+    100058: Neck
+    100060: //RootNode
+    100062: Shoulder_L
+    100064: Shoulder_R
+    100066: Thigh_L
+    100068: Thigh_R
+    100070: Toe_L
+    100072: Toe_R
+    100074: UpperBack
+    100076: UpperSleeve_L
+    100078: UpperSleeve_R
     400000: Ankle_L
     400002: Ankle_R
-    400004: Bicep_L
-    400006: Bicep_R
-    400008: Calf_L
-    400010: Calf_R
-    400012: Clavicle_L
-    400014: Clavicle_R
-    400016: Elbow_L
-    400018: Elbow_R
-    400020: Fingers_L
-    400022: Fingers_R
-    400024: Foot_L
-    400026: Foot_R
-    400028: Forearm_L
-    400030: Forearm_R
-    400032: Hand_L
-    400034: Hand_R
-    400036: Head
-    400038: Heel_L
-    400040: Heel_R
-    400042: Hip_L
-    400044: Hip_R
-    400046: Knee_L
-    400048: Knee_R
-    400050: LowerBack
-    400052: MainBody
-    400054: MiddleBack
-    400056: Neck
-    400058: //RootNode
-    400060: NurseBody
-    400062: NurseCrocL
-    400064: NurseCrocR
-    400066: NurseGloveL
-    400068: NurseGloveR
-    400070: NurseShirt
-    400072: NurseThong
-    400074: Shoulder_L
-    400076: Shoulder_R
-    400078: Thigh_L
-    400080: Thigh_R
-    400082: Thumb_L
-    400084: Thumb_R
-    400086: ThumbTip_L
-    400088: ThumbTip_R
-    400090: Toe_L
-    400092: Toe_R
-    400094: UpperBack
-    400096: Wrist_L
-    400098: Wrist_R
-    2100000: NurseShirtMat
-    2100002: HursePocketMat
-    2100004: Nursemat
-    2100006: NurseGlovesMat
-    2100008: NurseThongMat
-    2100010: NurseCrocsMat
-    4300000: NurseShirt
-    4300002: NurseBody
-    4300004: NurseGloveR
-    4300006: NurseGloveL
-    4300008: NurseThong
-    4300010: NurseCrocL
-    4300012: NurseCrocR
-    7400000: Walking
+    400004: Calf_L
+    400006: Calf_R
+    400008: Clavicle_L
+    400010: Clavicle_R
+    400012: Foot_L
+    400014: Foot_R
+    400016: GuardBelt
+    400018: GuardBody
+    400020: GuardPants
+    400022: GuardShirt
+    400024: GuardShoeL
+    400026: GuardShoeR
+    400028: GuardSleevePinL
+    400030: GuardSleevePinR
+    400032: GuardTie
+    400034: Head
+    400036: Heel_L
+    400038: Heel_R
+    400040: Hip_L
+    400042: Hip_R
+    400044: Knee_L
+    400046: Knee_R
+    400048: LowerBack
+    400050: LowerSleeve_L
+    400052: LowerSleeve_R
+    400054: MainBody
+    400056: MiddleBack
+    400058: Neck
+    400060: //RootNode
+    400062: Shoulder_L
+    400064: Shoulder_R
+    400066: Thigh_L
+    400068: Thigh_R
+    400070: Toe_L
+    400072: Toe_R
+    400074: UpperBack
+    400076: UpperSleeve_L
+    400078: UpperSleeve_R
+    2100000: GuardPantsMat
+    2100002: GuardShoeMat
+    2100004: GuardShirtMat
+    2100006: GuardBodyMat
+    2100008: GuardTieMat
+    2100010: GuardPinMat
+    2100012: GuardBeltMat
+    4300000: GuardPants
+    4300002: GuardShoeR
+    4300004: GuardShoeL
+    4300006: GuardShirt
+    4300008: GuardBody
+    4300010: GuardTie
+    4300012: GuardSleevePinR
+    4300014: GuardBelt
+    4300016: GuardSleevePinL
+    7400000: WalkingSecurityGuard
     9500000: //RootNode
-    13700000: NurseBody
-    13700002: NurseCrocL
-    13700004: NurseCrocR
-    13700006: NurseGloveL
-    13700008: NurseGloveR
-    13700010: NurseShirt
-    13700012: NurseThong
+    13700000: GuardBelt
+    13700002: GuardBody
+    13700004: GuardPants
+    13700006: GuardShirt
+    13700008: GuardShoeL
+    13700010: GuardShoeR
+    13700012: GuardSleevePinL
+    13700014: GuardSleevePinR
+    13700016: GuardTie
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HursePocketMat
-    second: {fileID: 2100000, guid: f9b6beef9c208914a970689f1f7aa693, type: 2}
+      name: GuardBeltMat
+    second: {fileID: 2100000, guid: cd6c88ca9698ecf4ba34286cd69f78a3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NurseCrocsMat
-    second: {fileID: 2100000, guid: ea5f148d0a760394bb29568be44c0081, type: 2}
+      name: GuardBodyMat
+    second: {fileID: 2100000, guid: 6a15dec88b148c54eb79f7c31ba10d6b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NurseGlovesMat
-    second: {fileID: 2100000, guid: 0466e0822a8d037488978cf586f24603, type: 2}
+      name: GuardPantsMat
+    second: {fileID: 2100000, guid: 3ad7525f1325e6c4dad39cd48c0a9f7c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NurseShirtMat
-    second: {fileID: 2100000, guid: ff1e3df1561e6cf46adb6626586210f9, type: 2}
+      name: GuardPinMat
+    second: {fileID: 2100000, guid: 5b5934ec5e86e2747b865c7b579b6aee, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NurseThongMat
-    second: {fileID: 2100000, guid: c0322233f1078c849bff0c580eebc0a2, type: 2}
+      name: GuardShirtMat
+    second: {fileID: 2100000, guid: e7f3ca150617e8742b40ff9ead65a3ca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Nursemat
-    second: {fileID: 2100000, guid: 79a99c2edb725024bb4433fcecd4b76e, type: 2}
+      name: GuardShoeMat
+    second: {fileID: 2100000, guid: 902989e37fb85da438dc2d2b3cd15b58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GuardTieMat
+    second: {fileID: 2100000, guid: 77f034e69da7cba43a5aa327472f95ae, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -185,10 +175,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: WalkingSecurityGuard
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 49
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
