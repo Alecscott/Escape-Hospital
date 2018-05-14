@@ -63,6 +63,7 @@ public class PatrolAI : MonoBehaviour {
 
 	void OnParticleCollision(GameObject sys){
 		Debug.Log("Running Away");
+		chasingPlayer = false;
 		agent.destination = enemySpawn.position;
 	}
 

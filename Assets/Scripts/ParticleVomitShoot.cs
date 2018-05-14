@@ -14,6 +14,8 @@ public class ParticleVomitShoot : MonoBehaviour {
 	public Text uiText;
 	public float vomitTime = 1;
 	private SoundManager soundManager;
+	private Vector3 vomitSpawn;
+	private Vector3 playerPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -23,14 +25,15 @@ public class ParticleVomitShoot : MonoBehaviour {
 		//main.loop = false;
 		firing = false;
 		soundManager = (SoundManager)GameObject.Find ("SoundManager").GetComponent (typeof(SoundManager));
-
 	}
 
 	// Update is called once per frame
 	void Update () {
+		vomitSpawn = new Vector3 (player.transform.position.x, player.transform.position.y, player.transform.position.z);
+
 		if (p == null) {
 			Debug.Log("Initializing particle");
-			p = (ParticleSystem)Instantiate (particleEffect, player.transform.position, player.transform.rotation);
+			p = (ParticleSystem)Instantiate (particleEffect, vomitSpawn, player.transform.rotation);
 			p.Stop ();
 
 		} 
@@ -40,7 +43,7 @@ public class ParticleVomitShoot : MonoBehaviour {
 			Debug.Log (p);
 
 			Debug.Log ("Particle Position Updated");
-			p.transform.position = player.transform.position;
+			p.transform.position = vomitSpawn;
 			p.transform.rotation = player.transform.rotation;
 
 

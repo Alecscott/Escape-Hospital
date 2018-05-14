@@ -18,7 +18,7 @@ public class Scene : MonoBehaviour {
 	// Use this for initialization
 	void OnTriggerEnter(Collider col){
 		if (col.CompareTag ("Player")) {
-			Debug.Log ("Got to Scene Load");
+			//Debug.Log ("Got to Scene Load");
 			StartCoroutine (FadeAndLoadScene(0,1));
 		}
 	}
@@ -29,14 +29,16 @@ public class Scene : MonoBehaviour {
 			Debug.Log("In");
 			while (fadeStart >= fadeEnd) {
 				SetColorImage (ref fadeStart, fadeEnd);
+				//SetColorImage (ref fadeEnd, fadeStart);
 				yield return null;
 			}
 			fadeOutImg.enabled = false;
 		} else {
 			Debug.Log ("Out");
 			fadeOutImg.enabled = true;
-			while (fadeStart <= fadeEnd) {
+			while (fadeStart < fadeEnd) {
 				SetColorImage (ref fadeStart,fadeEnd);
+				//SetColorImage (ref fadeEnd, fadeStart);
 				yield return null;
 			}
 		}
@@ -44,8 +46,10 @@ public class Scene : MonoBehaviour {
 
 	private IEnumerator FadeAndLoadScene(float fadeStart, float fadeEnd) 
 	{
-		yield return Fade(fadeStart, fadeEnd);
+		//yield return Fade(fadeStart, fadeEnd);
+		StartCoroutine (Fade(0,1));
 		SceneManager.LoadScene(levelName);
+		yield return null;
 	}
 
 	private void SetColorImage(ref float alpha, float end)
